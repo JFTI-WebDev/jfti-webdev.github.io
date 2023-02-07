@@ -22,6 +22,9 @@ function reportWindowSize() {
     }
 }
 
+// this call is necessary for keeping mobile menu from collapsing
+reportWindowSize();
+
 window.addEventListener('DOMContentLoaded', event => {
     reportWindowSize();
 
