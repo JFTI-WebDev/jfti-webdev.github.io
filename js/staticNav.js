@@ -22,12 +22,9 @@ function reportWindowSize() {
     }
 }
 
-// this call is necessary for keeping mobile menu from collapsing
-reportWindowSize();
-
 window.addEventListener('DOMContentLoaded', event => {
     reportWindowSize();
-
+    setVideoFrame();
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -63,17 +60,28 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-
+    // // Collapse responsive navbar when toggler is visible
+    // const navbarToggler = document.body.querySelector('.navbar-toggler');
+    // const responsiveNavItems = [].slice.call(
+    //     document.querySelectorAll('#navbarResponsive .nav-link')
+    // );
+    // responsiveNavItems.map(function (responsiveNavItem) {
+    //     responsiveNavItem.addEventListener('click', () => {
+    //         if (window.getComputedStyle(navbarToggler).display !== 'none') {
+    //             navbarToggler.click();
+    //         }
+    //     });
+    // });
 });
+
+// JS to start JFTI video at 2 seconds where a thumbnail exists
+window.addEventListener("loadedmetadata", setVideoFrame); 
+function setVideoFrame() {
+    var jftiVideo = document.getElementById("whyjfti-video");
+    
+    // video only exists on home page
+    if(jftiVideo!=null)
+    {
+        jftiVideo.currentTime = 2;
+    }
+};
