@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', event => {
 window.addEventListener("loadedmetadata", setVideoFrame); 
 function setVideoFrame() {
     var jftiVideo = document.getElementById("whyjfti-video");
-    
+
     // video only exists on home page
     if(jftiVideo!=null)
     {
