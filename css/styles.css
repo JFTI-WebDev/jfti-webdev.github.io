@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
         * Start Bootstrap - Agency v7.0.11 (https://startbootstrap.com/theme/agency)
-        * Copyright 2013-2023 Start Bootstrap
+        * Copyright 2013-2024 Start Bootstrap
         * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
         */
 /*!
@@ -11391,6 +11391,10 @@ img.mx-auto.rounded-circle {
   transform: translateX(-50%);
 }
 
+.font-weight-bold {
+  font-weight: bold;
+}
+
 .carousel-inner {
   /**/
   height: inherit;
@@ -11601,7 +11605,7 @@ header.masthead {
   position: relative;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/images/Website Pictures - Edited/Banner - AH-1.jpg");
+  background-image: url("/assets/img/images/Website Pictures - Edited/Banner - AH-1.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -12047,7 +12051,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("/assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
