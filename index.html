@@ -60,7 +60,13 @@
                         <a class="dropdown-item text-capitalize" href="/capabilities.html#facilities">Facilities</a>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="/careers.html">Careers</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#careers-menu">Careers</a>
+                    <div class="dropdown-menu" id="careers-menu">
+                        <a class="dropdown-item text-capitalize" href="/employee-benefits.html">Employee Benefits</a>
+                        <a class="dropdown-item text-capitalize" href="https://www2.appone.com/Search/Search.aspx?ServerVar=jftaylorinc.appone.com&amp;results=yes">Current Openings</a>
+                    </div>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="/contact-us.html">Contact Us</a></li>
                 <li class="nav-item text-right"><a class="border nav-link" href="https://intranet.jfti.com">Employee Login</a></li>
             </ul>
@@ -73,6 +79,7 @@
         <div class="masthead-heading text-uppercase">J.F. Taylor</div>
         <div class="masthead-subheading">Built on technical excellence</div>
         <a class="btn btn-primary btn-xl text-uppercase" href="/contact-us.html">Contact Us</a>
+        <a class="btn btn-primary btn-xl text-uppercase" data-bs-toggle="modal" href="#ccat-acquisition-news">NEWS: CCAT Acquisition</a>
         <div class="material-symbols-outlined text-center chevron">keyboard_double_arrow_down</div>
     </div>
 </header>
@@ -773,8 +780,42 @@
         </div>
     </div>
 </div>
+<!-- CCAT Acquisition Modal-->
+<div class="portfolio-modal modal fade" id="ccat-acquisition-news" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase" style="font-size: calc(1.325rem + 0.9vw)">NEWS: J.F. Taylor Acquires CCAT</h2>
+                            <img class="img-fluid d-block mx-auto" src="/assets/img/images/History/JFTI&amp;CCAT.jpg" alt="..." />
+                            <p class="item-intro text-muted">JF Taylor, Inc Expands Solutions Offering with Acquisition of Specialized USAF Contractor Clear Creek Applied Technologies</p>
+                            <p>
+                                Great Mills, MD – [April 1, 2024] – JF Taylor announced today the acquisition of Clear Creek Applied Technologies (CCAT), a software solutions company with offices in Dayton, OH and Ft. Walton Beach, FL. CCAT specializes in mission-critical simulation and training solutions development as well as test and evaluation. This strategic alignment strengthens JF Taylor’s position as a leading provider of cutting-edge training systems and defense solutions to the Department of Defense (DoD) and its international partners. "We are excited to welcome CCAT and its talented team to the JF Taylor family," said Wayne Taylor, President. "CCAT 's proven expertise in developing and delivering high-quality and proven mission and training solutions aligns perfectly with our mission to provide our customers with the most advanced and comprehensive support capabilities. This acquisition broadens our portfolio and positions us to better serve the evolving needs of our
+                                customers in the digital age."
+                            </p>
+                            <p>CCAT brings over 18 years of experience in the defense industry, specializing in the development and deployment of mission-critical software applications and T&E services for various US Navy, Air Force, and foreign partner programs. The company's team of highly skilled engineers, developers, and analysts boasts a deep understanding of its customers’ unique requirements and security protocols, ensuring the delivery of secure, reliable, and interoperable software solutions alongside mission critical test and evaluation services.</p>
+                            <p>"Joining forces with JF Taylor presents an incredible opportunity to leverage our combined expertise and resources to make an even greater impact on the DoD's mission success," said Walt March, President/CEO at CCAT. "We are confident that this partnership will enable us to deliver even more innovative and effective solutions to our customers while expanding our reach and capabilities."</p>
+                            <p>The acquisition of CCAT underscores JF Taylor’s commitment to providing its customers with a comprehensive suite of training and mission support solutions. By integrating CCAT's development capabilities with its existing expertise in highly complex military systems, JF Taylor will be able to offer a wider range of solutions that address the full spectrum of the warfighter’s training and operational needs.</p>
+                            <h4>About JF Taylor</h4>
+                            <p>JF Taylor is a prominent DoD solutions provider, specializing in the development and delivery of advanced mission and training systems and solutions. With over 40 years of experience as a design, engineering, and manufacturing company, JF Taylor delivers quality products and services to keep our military strong and our warfighters safe. Headquartered in Great Mills, Maryland, JF Taylor is dedicated to supporting the critical needs of US military personnel and its foreign partners. With a focus on innovation and collaboration, JF Taylor strives to remain at the forefront of the technology landscape, ensuring its customers have access to the most effective and efficient solutions available.</p>
+                            <br />
+                            <h4>About Clear Creek Applied Technologies</h4>
+                            <p>CCAT is a specialized USAF software solutions company headquartered in Dayton, Ohio. With over 18 years of experience, CCAT specializes in the development and deployment of mission-critical software applications, while also supporting test and evaluation requirements for various USAF programs. The company's team of skilled engineers and developers is dedicated to delivering secure, reliable, and interoperable solutions and services that meet the DoD's most demanding requirements.</p>
+                            <br />
+                            <p>Media Contact: Chris Wasniak | cwasniak@jfti.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Core theme JS-->
-<!--script(src='js/indexPage.js')-->
+<script src="js/indexPage.js"></script>
 <script src="js/carousel.js"></script>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <!-- * *                               SB Forms JS                               * *-->
