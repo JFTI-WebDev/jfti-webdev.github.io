@@ -32,11 +32,20 @@ function toggleModal(){
         case "facilities":
             modalID = "FacilitiesModal";
             break;
+        case "software-development":
+            modalID = "SoftwareDevelopmentModal";
         default:
             break;
     }
     if(modalID != null){
         let myModal = new bootstrap.Modal(document.getElementById(modalID), {});
-        myModal.show();
+      
+        document.getElementById(modalID).scrollIntoView({behavior: "smooth", block: "end", inline: "nearest" });
+        
+        // Setting a 1 second delay to allow for scrolling to happen
+        setTimeout(() => {
+            myModal.show();
+        }, 1000);
+       
     }
 }

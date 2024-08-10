@@ -11395,6 +11395,10 @@ img.mx-auto.rounded-circle {
   font-weight: bold;
 }
 
+.text-bg-dark {
+  color: #212529;
+}
+
 .carousel-inner {
   /**/
   height: inherit;
