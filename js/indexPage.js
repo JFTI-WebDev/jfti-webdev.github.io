@@ -9,11 +9,11 @@
 
 // Home page navbar (index.html)
 window.addEventListener('DOMContentLoaded', event => {
-    toggleCCATModal();
+    toggleModal();
 });
     
 
-function toggleCCATModal(){
+function toggleModal(){
 
     // Check if URL includes CCAT first before cookie
     var link = window.location.href;
@@ -25,6 +25,8 @@ function toggleCCATModal(){
         case "ccat-acquisition-news":
             modalID = "ccat-acquisition-news";
             break;
+        case "bugeye-acquisition-news":
+            modalID = "bugeye-acquisition-news";
         default:
             break;
     }
@@ -32,6 +34,16 @@ function toggleCCATModal(){
         let myModal = new bootstrap.Modal(document.getElementById(modalID), {});
         myModal.show();
         return;
+    }
+    
+
+    // If no CCAT, its the base URL and check for cookies
+    var bugeye = getCookie("show-bugeye");
+    // if its null add it and show the modal
+    if (bugeye == null){
+        let myModal = new bootstrap.Modal(document.getElementById('bugeye-acquisition-news'), {});
+        myModal.show();
+        document.cookie += "show-bugeye=false; max-age=31536000"; // set for 1 yr
     }
 
 }
