@@ -37,14 +37,14 @@ function toggleModal(){
     }
     
 
-    // If no CCAT, its the base URL and check for cookies
-    var bugeye = getCookie("show-bugeye");
-    // if its null add it and show the modal
-    if (bugeye == null){
-        let myModal = new bootstrap.Modal(document.getElementById('bugeye-acquisition-news'), {});
-        myModal.show();
-        document.cookie += "show-bugeye=false; max-age=31536000"; // set for 1 yr
-    }
+    // // If no CCAT, its the base URL and check for cookies
+    // var bugeye = getCookie("show-bugeye");
+    // // if its null add it and show the modal
+    // if (bugeye == null){
+    //     let myModal = new bootstrap.Modal(document.getElementById('bugeye-acquisition-news'), {});
+    //     myModal.show();
+    //     document.cookie += "show-bugeye=false; max-age=31536000"; // set for 1 yr
+    // }
 
 }
 
