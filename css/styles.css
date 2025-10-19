@@ -12086,3 +12086,159 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-left: auto;
   transition: transform 0.2s ease-in-out;
 }
+
+/* Navigation behavior - hover on desktop, click on mobile */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* Dropdown submenu styles */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+/* Submenu hover behavior - desktop only */
+@media (min-width: 992px) {
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Arrow rotation for click-based dropdowns */
+.dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+.dropdown-submenu .dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(90deg);
+}
+
+/* Navigation spacing fixes */
+.navbar-nav {
+  flex-wrap: nowrap;
+}
+
+.navbar-nav .nav-item {
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+/* Reduce padding on smaller screens */
+@media (max-width: 1200px) {
+  .navbar-nav .nav-item {
+    margin-right: 0.25rem;
+  }
+  
+  .navbar-nav .nav-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+.dropdown-submenu .dropdown-toggle::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: 0.8em;
+}
+
+/* Banner Section Styles */
+.banner-section {
+  margin-top: 80px; /* Account for fixed navbar */
+  position: relative;
+  padding: 0;
+}
+
+.banner-image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.banner-subtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .banner-image-container {
+    height: 300px;
+  }
+  
+  .banner-title {
+    font-size: 2rem;
+  }
+  
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Product Category Link Hover Effects */
+.product-category-link {
+  display: block;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.product-category-link:hover {
+  background-color: #f8f9fa;
+  border-color: #007bff;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+  text-decoration: none;
+}
+
+.product-category-link:hover h3 {
+  color: #0056b3 !important;
+}
+
+.product-category-link:hover p {
+  color: #495057 !important;
+}
