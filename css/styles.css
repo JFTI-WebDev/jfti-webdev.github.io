@@ -12113,6 +12113,33 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 }
 
+/* Mobile submenu behavior */
+@media (max-width: 991.98px) {
+  .dropdown-submenu .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: #f8f9fa;
+    border: 0;
+    box-shadow: none;
+    padding-left: 1rem;
+  }
+  
+  .dropdown-submenu .dropdown-item {
+    padding-left: 2rem;
+  }
+  
+  .dropdown-submenu .dropdown-toggle::after {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdown-submenu .dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(90deg);
+  }
+}
+
 /* Arrow rotation for click-based dropdowns */
 .dropdown-toggle[aria-expanded="true"]::after {
   transform: rotate(180deg);

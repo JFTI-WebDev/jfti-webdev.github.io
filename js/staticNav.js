@@ -9,6 +9,8 @@ function reportWindowSize() {
     // console.log("Window Resized");
     const mobileMenu = document.getElementById("mainNav");
     var links = mobileMenu.querySelectorAll("a.nav-link.dropdown-toggle");
+    var submenuLinks = mobileMenu.querySelectorAll("a.dropdown-item.dropdown-toggle");
+    
     for (i = 0; i < links.length; i++){
         let width = screen.width;
         if(width <= 992)
@@ -18,6 +20,19 @@ function reportWindowSize() {
         else
         {
             links[i].setAttribute('data-bs-toggle', 'dropdown')
+        }
+    }
+    
+    // Handle submenu dropdowns for mobile
+    for (i = 0; i < submenuLinks.length; i++){
+        let width = screen.width;
+        if(width <= 992)
+        {
+            submenuLinks[i].setAttribute('data-bs-toggle', 'collapse')
+        }
+        else
+        {
+            submenuLinks[i].setAttribute('data-bs-toggle', 'dropdown')
         }
     }
 }

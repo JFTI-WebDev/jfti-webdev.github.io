@@ -7,7 +7,9 @@
         <meta name="author" content="" />
         <title>Fixed Wing - JF Taylor, Inc.</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../assets/img/images/RGB/PNG (Transparent Background)/JFTaylor_RGB_Mark.png" />
+                <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/images/RGB/PNG (Transparent Background)/JFTaylor_RGB_Mark.png" />
+        <link rel="apple-touch-icon" href="/assets/img/images/RGB/PNG (Transparent Background)/JFTaylor_RGB_Mark.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -73,8 +75,8 @@
                             <div class="dropdown-menu" id="products-menu">
                                 <a class="dropdown-item text-capitalize" href="/products/product-overview.html">Product Overview</a>
                                 <div class="dropdown-submenu">
-                                    <a class="dropdown-item text-capitalize dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Fixed Wing</a>
-                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item text-capitalize dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-target="#fixed-wing-submenu" data-bs-auto-close="outside">Fixed Wing</a>
+                                    <div class="dropdown-menu" id="fixed-wing-submenu">
                                 <a class="dropdown-item text-capitalize" href="/products/fixed-wing.html">Fixed Wing Overview</a>
                                 <div class="dropdown-divider"></div>
                                         <a class="dropdown-item text-capitalize" href="/products/b-52.html">B-52</a>
@@ -104,16 +106,22 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <section class="page-section bg-light text-center">
-            <!-- Masthead-->
-            <h2 class="section-heading text-uppercase">Fixed Wing</h2>
-            <div class="container align-items-center">
+
+        <!-- Banner Header -->
+        <section class="page-section" style="padding: 6rem 0; background-color: #0043a7; margin-top: 80px;">
+            <div class="container">
                 <div class="row">
-                    <p class="section-subheading">
-                        J.F. Taylor provides simulation products for a wide range of fixed-wing aircraft platforms. Click on any aircraft below to learn more about our specific products and capabilities for that platform.
-                    </p>
+                    <div class="col-lg-12 text-center">
+                        <h1 class="text-white text-uppercase" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">Fixed Wing</h1>
+                        <p class="text-white lead" style="font-size: 1.2rem; margin-bottom: 0;">J.F. Taylor provides simulation products for a wide range of fixed-wing aircraft platforms. Click on any aircraft below to learn more about our specific products and capabilities for that platform.</p>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Main Content Section -->
+        <section class="page-section bg-light text-center" style="padding: 4rem 0;">
+            <div class="container align-items-center">
                 <div class="row mt-4">
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                         <div class="card h-100">
@@ -190,6 +198,44 @@
                 </div>
             </div>
         </section>
+
+        <!-- The J.F. Taylor Advantage Section -->
+        <section class="page-section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">The J.F. Taylor Advantage</h2>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled text-start" style="font-size: 1.2em;">
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                The correct level of fidelity for the customer application.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Authentic replications.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled text-start" style="font-size: 1.2em;">
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Tough, rugged and serviceable.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                We offer <a href="../custom-components.html" class="text-primary">customization and new product development</a>.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Footer-->
         <footer class="footer mt-auto py-3 bg-gradient bg-dark">
             <div class="container">

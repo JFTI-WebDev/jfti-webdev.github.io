@@ -7,7 +7,9 @@
         <meta name="author" content="" />
         <title>Product Overview - JF Taylor, Inc.</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../assets/img/images/RGB/PNG (Transparent Background)/JFTaylor_RGB_Mark.png" />
+                <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/images/RGB/PNG (Transparent Background)/JFTaylor_RGB_Mark.png" />
+        <link rel="apple-touch-icon" href="/assets/img/images/RGB/PNG (Transparent Background)/JFTaylor_RGB_Mark.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -73,8 +75,8 @@
                             <div class="dropdown-menu" id="products-menu">
                                 <a class="dropdown-item text-capitalize" href="/products/product-overview.html">Product Overview</a>
                                 <div class="dropdown-submenu">
-                                    <a class="dropdown-item text-capitalize dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Fixed Wing</a>
-                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item text-capitalize dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-target="#fixed-wing-submenu" data-bs-auto-close="outside">Fixed Wing</a>
+                                    <div class="dropdown-menu" id="fixed-wing-submenu">
                                 <a class="dropdown-item text-capitalize" href="/products/fixed-wing.html">Fixed Wing Overview</a>
                                 <div class="dropdown-divider"></div>
                                         <a class="dropdown-item text-capitalize" href="/products/b-52.html">B-52</a>
@@ -104,24 +106,21 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <section class="page-section bg-light text-center">
-            <!-- Masthead-->
-            <h2 class="section-heading text-uppercase">Product Overview</h2>
-            <div class="container align-items-center">
+
+        <!-- Banner Header -->
+        <section class="page-section" style="padding: 6rem 0; background-color: #0043a7; margin-top: 80px;">
+            <div class="container">
                 <div class="row">
-                    <p class="section-subheading">
-                        J.F. Taylor, Inc. supplies simulation professionals with the most accurate, realistic, serviceable and affordable products in the industry. We strive to be the industry's first choice in best-value simulated hardware. J.F. Taylor supports many aircraft and vehicle platforms with a variety of existing products including primary flight controls, avionics, displays, panels, etc. If you don't see the platform or hardware you need here, call us and ask about it. Often times, we can design and build new product faster and more cost effectively than alternative sources.
-                    </p>
-                    <p class="section-subheading">
-                        J.F. Taylor designs and manufactures a variety of cockpits, control sticks, throttles, cyclics, collectives, yokes, rudder pedals, and avionics. Many of these items are available at multiple levels of fidelity. We design and build items as small as a switch and as large and complex as fully outfitted and integrated cockpits.
-                    </p>
-                    <p class="section-subheading">
-                        In addition, J.F. Taylor provides a complete complement of engineering, design and support services for the development of any simulation projects including turnkey, build-to-print and rapid prototyping services for the most complex systems.
-                    </p>
+                    <div class="col-lg-12 text-center">
+                        <h1 class="text-white text-uppercase" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">Product Overview</h1>
+                        <p class="text-white lead" style="font-size: 1.2rem; margin-bottom: 1rem;">J.F. Taylor supports many aircraft and vehicle platforms with a variety of existing products including primary flight controls, avionics, displays, panels, etc. If you don't see the platform or hardware you need here, call us and ask about it. Often times, we can design and build new product faster and more cost effectively than alternative sources.</p>
+                        <p class="text-white lead" style="font-size: 1.2rem; margin-bottom: 1rem;">J.F. Taylor designs and manufactures a variety of cockpits, control sticks, throttles, cyclics, collectives, yokes, rudder pedals, and avionics. Many of these items are available at multiple levels of fidelity. We design and build items as small as a switch and as large and complex as fully outfitted and integrated cockpits.</p>
+                        <p class="text-white lead" style="font-size: 1.2rem; margin-bottom: 0;">In addition, J.F. Taylor provides a complete complement of engineering, design and support services for the development of any simulation projects including turnkey, build-to-print and rapid prototyping services for the most complex systems.</p>
+                    </div>
                 </div>
             </div>
         </section>
+
         <!-- Product Categories Grid -->
         <section class="page-section">
             <div class="container">
@@ -158,6 +157,44 @@
                 </div>
             </div>
         </section>
+
+        <!-- The J.F. Taylor Advantage Section -->
+        <section class="page-section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">The J.F. Taylor Advantage</h2>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled text-start" style="font-size: 1.2em;">
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                The correct level of fidelity for the customer application.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Authentic replications.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled text-start" style="font-size: 1.2em;">
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Tough, rugged and serviceable.
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                We offer <a href="../custom-components.html" class="text-primary">customization and new product development</a>.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Footer-->
         <footer class="footer mt-auto py-3 bg-gradient bg-dark">
             <div class="container">
