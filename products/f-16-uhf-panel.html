@@ -25,15 +25,16 @@
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0" id="navbar-links-menu">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">About</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item text-capitalize" href="../about-us.html">About Us</a>
-                                <a class="dropdown-item text-capitalize" href="../why-jfti.html">Why JFTI</a>
-                                <a class="dropdown-item text-capitalize" href="../facilities_v2.html">Facilities</a>
-                            </div>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#about-us-menu">About Us</a>
+                        <div class="dropdown-menu" id="about-us-menu">
+                            <a class="dropdown-item text-capitalize" href="../index.html#overview">Overview</a>
+                            <a class="dropdown-item text-capitalize" href="../index.html#locations">Locations</a>
+                            <a class="dropdown-item text-capitalize" href="../index.html#our-customers">Our Customers</a>
+                            <a class="dropdown-item text-capitalize" href="../index.html#our-history">Our History</a>
+                            <a class="dropdown-item text-capitalize" href="../index.html#our-leadership">Our Leadership</a>
+                        </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">What We Do</a>
