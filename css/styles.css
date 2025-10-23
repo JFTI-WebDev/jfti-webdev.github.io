@@ -12104,12 +12104,33 @@ section#contact form#contactForm :-ms-input-placeholder {
   top: 0;
   left: 100%;
   margin-top: -1px;
+  z-index: 1050;
+  min-width: 200px;
+}
+
+/* Hide other submenus when one is hovered to prevent overlap */
+.dropdown-submenu:hover ~ .dropdown-submenu .dropdown-menu {
+  display: none !important;
+}
+
+/* Specific positioning for rotorcraft submenu to prevent overlap */
+#rotorcraft-submenu {
+  z-index: 1051;
 }
 
 /* Submenu hover behavior - desktop only */
 @media (min-width: 992px) {
+  .dropdown-submenu .dropdown-menu {
+    display: none;
+  }
+  
   .dropdown-submenu:hover .dropdown-menu {
     display: block;
+  }
+  
+  /* Ensure submenus close when not hovered */
+  .dropdown-submenu:not(:hover) .dropdown-menu {
+    display: none !important;
   }
 }
 
