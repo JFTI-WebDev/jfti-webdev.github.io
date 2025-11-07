@@ -12462,3 +12462,26 @@ section#contact form#contactForm :-ms-input-placeholder {
 #our-leadership .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-size: 0.9rem !important;
 }
+
+/* Fix multi-line indentation for checkmarked lists */
+ul.list-unstyled li {
+  display: flex;
+  align-items: flex-start;
+  text-indent: 0;
+}
+
+ul.list-unstyled li i.fa-check-circle,
+ul.list-unstyled li i.fas.fa-check-circle,
+ul.list-unstyled li i.fa-arrow-right {
+  flex-shrink: 0;
+  margin-top: 0.2em;
+}
+
+/* Ensure text content wraps properly and aligns with first line */
+ul.list-unstyled li {
+  padding-left: 0;
+}
+
+ul.list-unstyled li > i {
+  margin-right: 0.5rem;
+}
