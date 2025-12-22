@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Ground-Based Systems</title>
+    <title>STS - Simulation Training Solutions</title>
     <!-- Favicon-->
             <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/images/RGB/PNG (Transparent Background)/JFTaylor_RGB_Mark.png" />
@@ -15,7 +15,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+        <style>
+        .pdf-container {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
 </head>
 <!-- Navigation-->
 <!-- Bootstrap core JS-->
@@ -58,12 +64,12 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#capabilities-menu">Capabilities</a>
                     <div class="dropdown-menu" id="capabilities-menu">
-                        <a class="dropdown-item text-capitalize" href="/capabilities.html">Overview</a>
                         <a class="dropdown-item text-capitalize" href="/capabilities.html#additive-manufacturing">Additive Manufacturing</a>
                         <a class="dropdown-item text-capitalize" href="/capabilities.html#electrical-fabrication">Electrical Fabrication</a>
                         <a class="dropdown-item text-capitalize" href="/capabilities.html#engineering-tools">Engineering Tools</a>
                         <a class="dropdown-item text-capitalize" href="/capabilities.html#facilities">Facilities</a>
                         <a class="dropdown-item text-capitalize" href="/capabilities.html#mechanical-fabrication">Mechanical Fabrication</a>
+                        <a class="dropdown-item text-capitalize" href="/capabilities.html">Overview</a>
                         <a class="dropdown-item text-capitalize" href="/capabilities.html#software-development">Software Development</a>
                     </div>
                 </li>
@@ -90,41 +96,8 @@
         </div>
     </div>
 </nav>
-<section class="page-section bg-light" id="portfolio" style="flex: 1">
-    <div class="container">
-        <div class="text-center"><h1 class="section-heading text-uppercase">Ground-Based Systems</h1></div>
-        <!-- Image carousel and description-->
-        <div class="container">
-            <p class="text-dark text-center">Our engineering and technical teams deliver customer built deployable vehicles and shelters to support our military's requirements.</p>
-            <!-- Image Carousel-->
-            <div class="container text-center my-4">
-                <div class="row mx-auto my-auto justify-content-center">
-                    <div class="carousel slide" id="carouselGroundBasedSystems" data-bs-ride="carousel" style="height: 40vh">
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGroundBasedSystems" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" data-bs-target="#carouselGroundBasedSystems" type="button" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active"><img class="d-block w-100" src="assets/img/images/What We Do/Our Work/Ground-Based Systems/Products Ground Based.jpg" /></div>
-                            <div class="carousel-item"><img class="d-block w-100" src="assets/img/images/What We Do/Our Work/Ground-Based Systems/Products Ground Based2.jpg" /></div>
-                            <div class="carousel-item"><img class="d-block w-100" src="assets/img/images/What We Do/Our Work/Ground-Based Systems/Tank trainer2.jpg" /></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <u1 style="text-align: left">
-                Ground-Vehicle Training Solutions to meet Soldier and Marine Requirements:
-                <li>Armored Multi-Purpose Vehicle (AMPV) Part-Task Trainer (PTT)</li>
-                <li>M1A2 Abrams Engine Diagnostic and Troubleshooting Trainer (ED/TT)</li>
-                <li>USMC Shelter Systems</li>
-            </u1>
-        </div>
-    </div>
+<section class="page-section mt-1" id="portfolio">
+    <embed src="/assets/docs/JFTI_STS.pdf" type="application/pdf" class="pdf-container"/>
 </section>
 <footer class="footer mt-auto py-3 bg-gradient bg-dark">
     <div class="container">
