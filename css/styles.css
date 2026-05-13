@@ -12489,3 +12489,17 @@ ul.list-unstyled li {
 ul.list-unstyled li > i {
   margin-right: 0.5rem;
 }
+
+
+/* Footer Styling */
+@media (min-width: 992px) {
+  .footer-border {
+    border-right: 1px solid #dee2e6 !important; /* Uses default Bootstrap border color */
+  }
+}
+
+@media (max-width: 992px){
+  .footer-border {
+    margin-bottom: 1rem; /* Uses default Bootstrap border color */
+  }
+}
