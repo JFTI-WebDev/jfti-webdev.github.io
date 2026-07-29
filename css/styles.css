@@ -12270,6 +12270,68 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 }
 
+/* Product Support & Resources accordion */
+.product-support-accordion .accordion-item {
+  border: none;
+  margin-bottom: 0.75rem;
+  border-radius: 0.35rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 67, 167, 0.2);
+}
+
+.product-support-accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.product-support-accordion .accordion-item:first-of-type,
+.product-support-accordion .accordion-item:last-of-type,
+.product-support-accordion .accordion-item:first-of-type .accordion-button,
+.product-support-accordion .accordion-item:last-of-type .accordion-button.collapsed,
+.product-support-accordion .accordion-item:last-of-type .accordion-collapse {
+  border-radius: 0.35rem;
+}
+
+.product-support-accordion .accordion-button {
+  color: #fff;
+  background-color: #0043a7;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 1.15rem 1.5rem;
+  border-radius: 0.35rem;
+}
+
+.product-support-accordion .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #003c96;
+  box-shadow: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.product-support-accordion .accordion-button::after,
+.product-support-accordion .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.product-support-accordion .accordion-button:hover {
+  background-color: #003c96;
+  color: #fff;
+}
+
+.product-support-accordion .accordion-button:focus {
+  border-color: #0043a7;
+  box-shadow: 0 0 0 0.25rem rgba(0, 67, 167, 0.35);
+}
+
+.product-support-accordion .accordion-body {
+  background-color: #fff;
+  padding: 1.5rem 1.5rem;
+  border: 1px solid #0043a7;
+  border-top: none;
+  border-bottom-left-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+}
+
 /* Product Category Link Hover Effects */
 .product-category-link {
   display: block;
