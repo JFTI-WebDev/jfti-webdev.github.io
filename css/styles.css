@@ -12083,11 +12083,12 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .section-date {
-  flex-shrink: 1;
+  flex-shrink: 0;
   width: -moz-fit-content;
   width: fit-content;
   height: auto;
   margin-left: auto;
+  white-space: nowrap;
   transition: transform 0.2s ease-in-out;
 }
 
